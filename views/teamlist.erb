@@ -1,0 +1,37 @@
+<p> Please select a Team below:</p>
+<form action="/teaminfo" method="POST"> 
+
+<% @teams.each do |t| %>
+
+
+<input type="radio" name=teams[team_id] 
+value="<%=t.id%>"><%=t.name %></input><br>
+<% end %>
+<br>
+
+<input type="submit" name="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<!--<p> Select a team below:</p>-->
+<!--<form action="/show_team" method="POST"> -->
+<!--<% @teams.each do |t| %>-->
+<!--<p><%=t.name %></p>-->
+<!--<%end%>-->
+
+<!--<input type="submit" name="Submit">-->
+
+
+
+<!--<%@teams.each do |t| %>-->
+<!--<p><%= t.name %></p>-->
+<!--<%end%>--> 

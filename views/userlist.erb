@@ -1,0 +1,32 @@
+<p> Please select a name from the list below to check contact information:</p>
+<form action="/userinfo" method="POST"> 
+
+<% @users.each do |u| %>
+
+
+<input type="radio" name=users[u_ids] 
+value="<%=u.id%>"><%=u.name %></input><br>
+<% end %>
+<br>
+
+<input type="submit" name="Submit">
+</form>
+
+
+
+<!--<label for="users"> Choose a name:</label>-->
+<!--<select id="users">-->
+<!--<option value=<%="u.name"%>>u.name</option>-->
+<!--</select>-->
+<!--<% @users.each do |u| %>-->
+<!--<input type="checkbox" name=teams[u_ids][] id="<%= u.id%>"-->
+<!--value="<%=u.id%>"><%=u.name %></input><br>-->
+<!--<% end %>-->
+<!--<br>-->
+
+<!--<input type="submit" name="Submit">-->
+
+<!--</form>-->
+
+
+
