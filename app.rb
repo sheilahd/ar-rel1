@@ -41,24 +41,5 @@ end
 
 
 
-
-# post '/show_info' do
-#   @teams = Team.find_by(name: params[:team_id])
-#   if @teams.nil?
-#     "Team not found"
-#   end
-#   erb :teaminfo
-# end
-
-# post '/team/:id' do
-#   @teams = Team.find[params[:id]]
-#   if @teams.nil?
-#     "Team not found"
-#   end
-#   erb :teaminfo
-# end
-
-
-
   
   

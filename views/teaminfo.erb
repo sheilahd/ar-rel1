@@ -1,10 +1,9 @@
-
-
-<p> Team_id: <%=@teaml.id %></p>
-<p> Team Name: <%=@teaml.name %></p>
-<p>  Team Notes: <%=@teaml.notes  %> </p>
+<h4> Team_id: <%=@teaml.id %></h4>
+<h4> Team Name: <%=@teaml.name %></h4>
+<h4>  Team Notes: <%=@teaml.notes  %> </h4>
+<h4>  Team members: </h4>
 <% @users_t.each do |ut| %>
-<p>  Team member: <%=ut.name %></p>
+<h5><%=ut.name %></h5>
 <%end%>
 
 

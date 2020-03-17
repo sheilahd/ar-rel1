@@ -1,9 +1,6 @@
 <p> Please select a Team below:</p>
 <form action="/teaminfo" method="POST"> 
-
 <% @teams.each do |t| %>
-
-
 <input type="radio" name=teams[team_id] 
 value="<%=t.id%>"><%=t.name %></input><br>
 <% end %>
